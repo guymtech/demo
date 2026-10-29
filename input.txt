@@ -1,6 +1,10 @@
-for(i=0;i<=n;i++){
-    i=i+1;
-    p=2*4;
-    r=i+p;
-    q=p+r;
+i = 0;
+sum = 0;
+
+while (i < n) {
+    x = a * b;
+    y = x + 0;
+    z = a * b;
+    sum = sum + z;
+    i = i + 1;
 }

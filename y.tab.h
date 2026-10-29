@@ -54,22 +54,19 @@ extern int yydebug;
     YYEOF = 0,                     /* "end of file"  */
     YYerror = 256,                 /* error  */
     YYUNDEF = 257,                 /* "invalid token"  */
-    FOR = 258,                     /* FOR  */
-    LP = 259,                      /* LP  */
-    RP = 260,                      /* RP  */
-    LB = 261,                      /* LB  */
-    RB = 262,                      /* RB  */
-    LT = 263,                      /* LT  */
-    GT = 264,                      /* GT  */
-    LE = 265,                      /* LE  */
+    WHILE = 258,                   /* WHILE  */
+    PLUS = 259,                    /* PLUS  */
+    ASSIGN = 260,                  /* ASSIGN  */
+    MUL = 261,                     /* MUL  */
+    LP = 262,                      /* LP  */
+    RP = 263,                      /* RP  */
+    LB = 264,                      /* LB  */
+    RB = 265,                      /* RB  */
     SC = 266,                      /* SC  */
-    ASSIGN = 267,                  /* ASSIGN  */
-    PLUS = 268,                    /* PLUS  */
-    MUL = 269,                     /* MUL  */
-    INC = 270,                     /* INC  */
-    WHILE = 271,                   /* WHILE  */
-    NUM = 272,                     /* NUM  */
-    ID = 273                       /* ID  */
+    LT = 267,                      /* LT  */
+    GT = 268,                      /* GT  */
+    NUM = 269,                     /* NUM  */
+    ID = 270                       /* ID  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -78,33 +75,30 @@ extern int yydebug;
 #define YYEOF 0
 #define YYerror 256
 #define YYUNDEF 257
-#define FOR 258
-#define LP 259
-#define RP 260
-#define LB 261
-#define RB 262
-#define LT 263
-#define GT 264
-#define LE 265
+#define WHILE 258
+#define PLUS 259
+#define ASSIGN 260
+#define MUL 261
+#define LP 262
+#define RP 263
+#define LB 264
+#define RB 265
 #define SC 266
-#define ASSIGN 267
-#define PLUS 268
-#define MUL 269
-#define INC 270
-#define WHILE 271
-#define NUM 272
-#define ID 273
+#define LT 267
+#define GT 268
+#define NUM 269
+#define ID 270
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 19 "comp2.y"
+#line 21 "parser.y"
 
     int num;
     char *str;
 
-#line 108 "y.tab.h"
+#line 102 "y.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;
